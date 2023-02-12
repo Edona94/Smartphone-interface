@@ -1,14 +1,20 @@
 package org.example;
 
-public abstract class Contact {
+public class Contact {
     private String nameOfContact;
 
-    public Contact(String nameOfContact) {
-        this.nameOfContact = nameOfContact;
-    }
+     public Contact(String nameOfContact) {
+         this.nameOfContact = nameOfContact;
+     }
 
-    public String getNameOfContact() {
+     public String getNameOfContact() {
         return nameOfContact;
     }
 
+    @Override
+    public String toString() {
+        return
+                "nameOfContact='" + nameOfContact + '\'' ;
+
+    }
 }
